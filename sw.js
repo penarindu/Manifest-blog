@@ -6,7 +6,7 @@ self.addEventListener('fetch', function(event) {
   event.respondWith(fetch(event.request));
 });
 
-const CACHE_NAME = 'pwa-blog-v1';
+const CACHE_NAME = 'pwa-blog-v2';
 const urlsToCache = [
   '/',
   '/index.html',
