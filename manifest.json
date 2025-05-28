@@ -1,6 +1,6 @@
 {
   "name": "GORESAN pena DALAM sebuah TINTA asmara",
-  "short_name": "PenaRindu",
+  "short_name": "Quill",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#447766",
@@ -8,8 +8,13 @@
   "description": "Ruang perenungan dan ekspresi jiwa.",
   "icons": [
     {
-      "src": "https://blogger.googleusercontent.com/img/a/AVvXsEiu2JU2j7h8blitHpv5WeqC-4U6JdfrXGlXi4AOCqMxJu1PAWgzCDcqYdMyVBy_mt_uksc8TNYOBTUfa-gVLj4Z2DxUVdrGZTiekB9m7L9frBCCioVof-7-qytTkSnMlkPK4D5U1KzS2yOkcY_DK83UF65cRIV5iYpDT4WVKmvY-md0157G934qvUZ9enw",
+      "src": "https://raw.githubusercontent.com/penarindu/Manifest-blog/main/IMG-20250512-WA0002.png",
       "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/penarindu/Manifest-blog/main/IMG-20250512-WA0002.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],
