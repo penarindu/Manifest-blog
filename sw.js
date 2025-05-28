@@ -51,3 +51,27 @@ self.addEventListener('fetch', event => {
     })
   );
 });
+
+// Tambahkan file offline.html ke cache
+const urlsToCache = [
+  '/Manifest-blog/',
+  '/Manifest-blog/index.html',
+  '/Manifest-blog/manifest.json',
+  '/Manifest-blog/favicon.ico',
+  '/Manifest-blog/icons/icon-192x192.png',
+  '/Manifest-blog/icons/icon-512x512.png',
+  '/Manifest-blog/offline.html',
+  'https://raw.githubusercontent.com/penarindu/Manifest-blog/main/IMG-20250512-WA0002.png'
+];
+
+// ...
+// Ubah bagian fetch:
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    fetch(event.request).catch(() => {
+      return caches.match(event.request).then(response => {
+        return response || caches.match('/Manifest-blog/offline.html');
+      });
+    })
+  );
+});
